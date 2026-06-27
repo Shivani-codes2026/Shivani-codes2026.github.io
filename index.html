@@ -193,6 +193,27 @@ footer{
 .about{
     grid-template-columns:1fr;
     
+nav ul {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 30px;                
+    list-style: none;         
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0BA5C4;          
 
 }
 </style>
@@ -264,11 +285,12 @@ footer{
     <div class="projects">
 
         <div class="card">
-            <h3><a href="Calender.html">1. April calender</a></h3>
+            <h3>1. April calender</h3>
             <p>
                  built using HTML.
                 
             </p>
+            <p><a href="Calender.html">👉click here</a> </p>
         </div>
 
         <div class="card">
@@ -287,6 +309,7 @@ footer{
         <div class="card">
           <h4>4.  Travel information website </h4>
           <p>built using html+css</p>
+            <p><a href="Travel.html">👉click here </a>
         </div>
 
     </div>
