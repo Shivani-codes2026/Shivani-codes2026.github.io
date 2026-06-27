@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalanda-Rajgir Travel Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style >
+    /* Pehle wala blue header + hover effect use kar le */
+.main-header {
+    background: linear-gradient(90deg, #0BA5C4, #05668D);
+}
+
+/* Hero me Rajgir ki image */
+.hero {
+    background: url('rajgir-hills.jpg') center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* Text clear dikhe */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Cards same hover effect */
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.tag {
+    background: #FFA500;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* History section */
+.history {
+    background: #f8f9fa;
+    padding: 50px 20px;
+}
+
+/* How to reach cards */
+.reach-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reach-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.reach-card i {
+    font-size: 40px;
+    color: #0BA5C4;
+    margin-bottom: 15px;
+}
+.main-header {
+    background: linear-gradient(90deg, #0BA5C4, #05668D);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.main-header h1 {
+    margin: 0 0 15px 0; /* Niche space ke liye */
+    font-size: 28px;
+    color: white;
+    display: block; /* Poori width le */
+}
+
+.navbar {
+    display: flex; /* Ye sabse important hai */
+    justify-content: center; /* Links ko center me la dega */
+    align-items: center;
+    gap: 20px; /* Links ke beech space */
+    flex-wrap: wrap; /* Phone me niche aa jayenge */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar a i {
+    margin-right: 5px; /* Icon aur text ke beech gap */
+}  
+    .hero {
+    /* Image URL yahan daal */
+   background-image: url('images/raj.jpg' );
+    background-size: cover;        /* Puri screen me fit ho jaye */
+    background-position: center;   /* Beech me rahe */
+    background-repeat: no-repeat;  /* Repeat na ho */
+    height: 70vh;                  /* Section ki height */
+}
+  
+  </style >
+</head>
+<body>
+    <!-- Blue Header Wala -->
+    <header class="main-header">
+        <h1><i class="fas fa-landmark"></i> Nalanda-Rajgir Darshan</h1>
+        <nav class="navbar">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#places"><i class="fas fa-map-marker-alt"></i> Places</a>
+            <a href="#history"><i class="fas fa-book"></i> History</a>
+            <a href="#reach"><i class="fas fa-route"></i> How to Reach</a>
+            <a href="#contact"><i class="fas fa-phone"></i> Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Bihar Ka Itihaas, Prakriti Ki Goad Me</h1>
+            <p>Explore the ancient ruins of Nalanda University & the scenic hills of Rajgir</p>
+            <button class="explore-btn">Explore Places</button>
+        </div>
+    </section>
+
+    <!-- Popular Destinations - Cards Wale -->
+    <section class="destinations" id="places">
+        <h2>Famous Places to Visit</h2>
+        <div class="cards-container">
+            
+            <div class="destination-card">
+                <img src="nalanda-ruins.jpg" alt="Nalanda University">
+                <h3>Nalanda University Ruins</h3>
+                <p>World Heritage Site. 5th century ki prachin university. UNESCO site hai.</p>
+                <span class="tag">Ticket: ₹40 Indian</span>
+            </div>
+
+            <div class="destination-card">
+                <img src="vishwa-shanti-stupa.jpg" alt="Vishwa Shanti Stupa">
+                <h3>Vishwa Shanti Stupa, Rajgir</h3>
+                <p>Ropeway se pahadi pe. White marble ka shandar stupa. Full city view.</p>
+                <span class="tag">Ropeway: ₹120</span>
+            </div>
+
+            <div class="destination-card">
+                <img src="hot-springs.jpg" alt="Hot Springs">
+                <h3>Brahmakund Hot Springs</h3>
+                <p>Natural hot water kund. Medicinal properties. Male/Female alag.</p>
+                <span class="tag">Timing: 5 AM - 9 PM</span>
+            </div>
+
+            <div class="destination-card">
+                <img src="ghora-katora.jpg" alt="Ghora Katora">
+                <h3>Ghora Katora Lake</h3>
+                <p>Pahadi se ghira shant lake. Boating hoti hai. Buddha statue 70ft.</p>
+                <span class="tag">Boating: ₹50</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history" id="history">
+        <h2>Itihaas Ke Panne Se</h2>
+        <div class="history-content">
+            <h3>Nalanda University</h3>
+            <p>5th century me establish hui thi. World ki pehli residential university. 10,000 students + 2000 teachers the. Bakhtiyar Khilji ne 1193 me destroy kar diya tha.</p>
+            
+            <h3>Rajgir</h3>
+            <p>Magadh ki pehli capital. Buddha aur Mahavir dono yahan aaye the. Jarasandh ka Akhara bhi yahin hai. Ajatashatru ka kila ke ruins bhi hain.</p>
+        </div>
+    </section>
+
+    <!-- How to Reach -->
+    <section class="reach" id="reach">
+        <h2>Kaise Pahunche?</h2>
+        <div class="reach-cards">
+            <div class="reach-card">
+                <i class="fas fa-train"></i>
+                <h3>By Train</h3>
+                <p>Nearest: Rajgir Railway Station. Patna se 3hr. Gaya se 1.5hr.</p>
+            </div>
+            <div class="reach-card">
+                <i class="fas fa-bus"></i>
+                <h3>By Bus</h3>
+                <p>Patna, Gaya, Bihar Sharif se direct bus. BSRTC chalti hai.</p>
+            </div>
+            <div class="reach-card">
+                <i class="fas fa-plane"></i>
+                <h3>By Air</h3>
+                <p>Nearest Airport: Gaya 70km, Patna 100km.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
