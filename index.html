@@ -73,6 +73,7 @@ nav ul{
     max-width:5000px;
     font-family:cursive;
     color:purple;
+    font-size:15px;
 }
 
 .btn{
@@ -85,7 +86,7 @@ nav ul{
     transition:.3s;
 }
  
-}
+
 
 .hero-text{
     width:350px;
@@ -110,6 +111,7 @@ section{
     gap:40px;
     font-family: cursive;
      color:purple; 
+    font-size:15px;
 
 }
 
@@ -193,7 +195,8 @@ footer{
 .about{
     grid-template-columns:1fr;
     
-nav ul {
+    
+/*nav ul {
     display: flex;
     justify-content: center;  
     align-items: center;
@@ -215,7 +218,28 @@ nav ul li a {
 nav ul li a:hover {
     color: #0BA5C4;          
 
+}*/
+
+nav ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
 }
+
+nav ul li {
+    display: inline-block !important;
+    margin: 0 15px !important;
+}
+
+nav ul li a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+    
 </style>
 </head>
 <body>
@@ -251,7 +275,7 @@ nav ul li a:hover {
 
    
 </section>
-
+<hr>
 <section id="about">
     <h2 class="section-title">✍️ About Me 👩‍🎓</h2>
 
@@ -266,6 +290,7 @@ nav ul li a:hover {
             </p>
         </div>
 </section>
+    <hr>
 <section id="skill">
   <h3 class="section-title">🎓My Skills🥇</h3>
     <img src="com2.jpg "width="300"height="200">
@@ -279,7 +304,7 @@ nav ul li a:hover {
             
 </section>
     
-
+<hr>
 <section id="projects">
     <h2 class="section-title">🔮 Projects 💻</h2>
     <div class="projects">
@@ -314,7 +339,7 @@ nav ul li a:hover {
 
     </div>
 </section>
-
+<hr>
 <section id="contact" class="contact">
     <h2 class="section-title">📞Contact Me😊</h2>
 <img src="con.jpg"width="250"height="200">
@@ -326,6 +351,7 @@ nav ul li a:hover {
       / <a href="index.html">Github</a>
      / <a href="index.html">YouTube</a>
       </p>
+    <hr>
 <p><marquee behavior="scroll" direction="left" scrollamount="6" loop="infinite" >
     
     <img src="com.jpg"  width="200" height="150" margin-right="10">
@@ -341,7 +367,7 @@ nav ul li a:hover {
     
  
 <footer>
-    
+ <hr>   
 <marquee>🤗Thank you for visit my website✨
   </marquee>
   <marquee direction="right"> <p>☺ 2026 shivani. All Rights Reserved.😊</p></marquee>
