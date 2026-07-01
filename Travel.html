@@ -81,7 +81,16 @@
 .hero-text h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #05668D;
+    font-family: 'Brush Script MT', 'Dancing Script', cursive; /* Cursive font */
+    
 }
+
+.hero-text p{
+     color: #05668D;
+    font-family: 'Brush Script MT', 'Dancing Script', cursive; /* Cursive font */
+}
+      
 /* Famous Places Section */
 .destination{
     padding: 30px 15px;
@@ -217,6 +226,44 @@ section.destinations h3 {
     color: #05668D !important; /* Blue color */
 
 
+}
+
+/* TRAVEL HEADING - PORTFOLIO JAISA ANIMATED */
+.travel h1, .travel h2, 
+.visit-place h1, .visit-place h2,
+.destination h1, .destination h2, 
+#travel h1, #travel h2 {
+    background: linear-gradient(-45deg, #00C9A7, #005BEA, #667eea, #764ba2);
+    background-size: 400% 400% !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    animation: gradientShift 4s ease infinite !important;
+    font-size: 36px !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* Travel Section BG - Dark rakho to heading chamke */
+.travel, .visit-place, .destination, #travel {
+    background: #1a1a2e !important; /* Dark BG */
+    padding: 60px 20px !important;
+    border-radius: 20px !important;
+    margin: 30px 10px !important;
+}
+
+.travel p, .visit-place p, .destination p {
+    color: #f1f1f1 !important; /* White text */
+    text-align: center !important;
+    font-size: 18px !important;
+}
+
+/* Animation same as portfolio nav */
+@keyframes gradientShift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
       
   </style >
